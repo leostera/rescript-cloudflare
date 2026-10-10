@@ -1,0 +1,7 @@
+node_modules/
+**/lib/
+**/*.res.js
+.pi/
+.DS_Store
+.cloudflare/
+.wrangler/

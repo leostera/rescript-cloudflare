@@ -1,0 +1,14 @@
+{
+  "name": "@reworked/cloudflare-rescript",
+  "version": "0.1.0",
+  "description": "ReScript bindings for Cloudflare Workers platform APIs",
+  "license": "MIT",
+  "files": ["src/**/*.res", "rescript.json", "README.md"],
+  "scripts": {
+    "build": "rescript build",
+    "clean": "rescript clean"
+  },
+  "peerDependencies": {
+    "rescript": ">=12.0.0"
+  }
+}

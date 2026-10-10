@@ -1,0 +1,25 @@
+{
+  "name": "reworked-cloudflare-rescript",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "workspaces": [
+    "packages/*",
+    "examples"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "clean": "npm run clean --workspaces --if-present",
+    "test:local": "npm run test:local --workspace @reworked/examples",
+    "check": "npm run build && npm run test:local"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261010.1",
+    "esbuild": "^0.28.2",
+    "miniflare": "5.20261006.1-alpha",
+    "rescript": "12.3.1",
+    "wrangler": "4.149.0"
+  }
+}
